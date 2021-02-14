@@ -1,0 +1,73 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    box-shadow: 0px 0px 7px 0px grey;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+body {
+    background-color: rgb(87, 189, 130);
+    transition: 0.3s;
+}
+
+h3 {
+    padding: 8px 0px !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+}
+
+.red {
+    color: crimson;
+}
+
+header h2 {
+    font-weight: 500;
+    color: rgb(45, 43, 43);
+}
+
+.shake {
+    animation: animationShake 0.5s ease;
+}
+
+.rotate {
+    animation: animationRotate 0.5s ease;
+}
+
+@keyframes animationRotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes animationShake {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(7%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
